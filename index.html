@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Persegi</h1>
+    </header>
+    <section class="content">
+        <div class="info">
+            <img src="img/Persegi.png" alt="Persegi">
+            <p>Rumus Luas: L = s x s</p>
+            <p>Rumus Keliling: K = 4s</p>
+        </div>
+        <div class="calculator">
+            <div class="options">
+                <label>
+                    <input type="radio" name="jenis-kalkulasi" value="luas" checked> Luas
+                </label>
+                <label>
+                    <input type="radio" name="jenis-kalkulasi" value="keliling"> Keliling
+                </label>
+            </div>
+            <div class="input">
+                <label for="panjang-sisi">Panjang Sisi (s):</label>
+                <input type="number" id="panjang-sisi" placeholder="Masukkan panjang sisi">
+            </div>
+            <div class="result">
+                <p>Hasil: <span id="hasil-kalkulasi">-</span></p>
+            </div>
+            <button id="hitung">Hitung</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
